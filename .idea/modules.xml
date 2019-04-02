@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/blacksword/blacksword.iml" filepath="$PROJECT_DIR$/blacksword/blacksword.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redsword/redsword.iml" filepath="$PROJECT_DIR$/redsword/redsword.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sword.iml" filepath="$PROJECT_DIR$/sword.iml" />
+    </modules>
+  </component>
+</project>
