@@ -1,44 +1,89 @@
 package lee.sword.service.impl;
 
-import lee.sword.entity.User;
 import lee.sword.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import lee.sword.dao.UserMapper;
+import lee.sword.entity.User;
 
 /**
- * Created by ASUS on 2019/5/14.
+ * Created by wly on 2017/12/15.
  */
+@Service
 public class UserServiceImpl implements UserService {
-    @Override
+    @Autowired
+    private UserMapper userMapper;
+
+    @Transactional
     public int regist(User user) {
-        return 0;
+        int i = userMapper.insert(user);
+        i = i / 0;
+        return i;
+    }
+
+    public User login(String name, String password) {
+        User user = new User();
+        user.setEmail( name );
+        user.setPassword( password );
+        return userMapper.selectOne( user );
+        //return userMapper.findUserByNameAndPwd( name,password );
+    }
+
+    public User findByEmail(String email) {
+        User user = new User();
+        user.setEmail( email );
+        return userMapper.selectOne( user );
+       // return userMapper.findByEmail(email);
     }
 
     @Override
-    public void login(User user) {
-
+    public User findByPhone(String phone) {
+        User user = new User();
+        user.setPhone(phone);
+        return userMapper.selectOne(user);
     }
 
     @Override
-    public User findUserByEmail(String email) {
-        return null;
+    public User findById(Long id) {
+        User user = new User();
+        user.setId(id);
+        return userMapper.selectOne(user);
     }
 
-    @Override
-    public User findUserByPhone(String phone) {
-        return null;
+    public User findByEmailActive(String email) {
+        User user = new User();
+        user.setEmail( email );
+        return userMapper.selectOne( user );
+        // return userMapper.findByEmail(email);
     }
 
-    @Override
-    public User findUserById(Integer id) {
-        return null;
+    public User findById(String id) {
+        User user = new User();
+        Long uid = Long.parseLong( id );
+        user.setId( uid );
+        return userMapper.selectOne( user );
     }
 
-    @Override
-    public void delete(User user) {
-
+    public User findById(long id) {
+        User user = new User();
+        user.setId( id );
+        return userMapper.selectOne( user );
     }
-
-    @Override
+    @Transactional
+    public void deleteByEmail(String email) {
+        User user = new User();
+        user.setEmail( email );
+        userMapper.delete( user );
+    }
+    @Transactional
+    public void deleteByEmailAndFalse(String email) {
+        User user = new User();
+        user.setEmail( email );
+        userMapper.delete( user );
+    }
+    @Transactional
     public void update(User user) {
-
+        userMapper.updateByPrimaryKeySelective( user );
     }
 }

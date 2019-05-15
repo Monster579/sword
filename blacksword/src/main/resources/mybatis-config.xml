@@ -23,8 +23,9 @@
             <!--通用Mapper接口，多个通用接口用逗号隔开-->
             <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
         </plugin>
-        <!-- 自定义分页插件 -->
-           <plugin interceptor="wang.dreamland.www.common.PageHelper"></plugin>
+            <!-- 自定义分页插件 -->
+            <plugin interceptor="lee.sword.common.PageHelper"></plugin>
 
     </plugins>
 </configuration>
+

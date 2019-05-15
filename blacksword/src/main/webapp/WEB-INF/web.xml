@@ -4,34 +4,19 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
           http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
-  <!--初始化配置信息，主要定义了：
-
-  1.Web 应用的名字、描述（display-name 和 description 标签）;
-  2.应用范围的初始化参数（context-param 标签）；
-  3.过滤器配置（filter 标签）；
-  4.监听器配置(listener 标签)；
-  5.servlet 配置（servlet 标签，如前端控制器和验证码）；
-  6.欢迎页面（welcome-file-list 标签，如 index.jsp 页面）；
-  7.session失效时间（session-config 标签）；
-  8.错误页面配置（error-page 标签，如 404、500错误页面等）。
-  -->
 
   <display-name>dreamland-web</display-name>
 
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>
-      classpath*:spring-mybatis.xml,
+      classpath*:spring-mybatis.xml
     </param-value>
   </context-param>
 
   <context-param>
     <param-name>log4jConfigLocation</param-name>
     <param-value>classpath:log4j.properties</param-value>
-  </context-param>
-  <context-param>
-    <param-name/>
-    <param-value/>
   </context-param>
 
   <!-- 编码过滤器 解决POST乱码问题-->
