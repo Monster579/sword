@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="blacksword:war exploded">
-    <output-path>$PROJECT_DIR$/blacksword/target/dreamland-web</output-path>
+  <artifact type="exploded-war" name="blacksword1:war exploded">
+    <output-path>$PROJECT_DIR$/blacksword1/target/dreamland-web</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="blacksword" />
+          <element id="module-output" name="blacksword1" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
@@ -74,9 +74,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/blacksword/target/dreamland-web/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/blacksword1/target/dreamland-web/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="blacksword/web/Web" />
+      <element id="javaee-facet-resources" facet="blacksword1/web/Web" />
     </root>
   </artifact>
 </component>

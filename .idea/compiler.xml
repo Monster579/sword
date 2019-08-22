@@ -7,11 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="blacksword" />
+        <module name="blacksword1" />
+        <module name="blogDemo" />
         <module name="redsword" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="blacksword" target="1.7" />
+      <module name="blacksword1" target="1.7" />
+      <module name="blogDemo" target="1.7" />
+      <module name="dreamland" target="1.5" />
+      <module name="dreamland-web" target="1.7" />
       <module name="redsword" target="1.5" />
       <module name="sword" target="1.5" />
     </bytecodeTargetLevel>

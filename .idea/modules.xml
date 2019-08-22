@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/blacksword/blacksword.iml" filepath="$PROJECT_DIR$/blacksword/blacksword.iml" />
+      <module fileurl="file://E:\2018program\sword\blacksword1\blacksword1.iml" filepath="E:\2018program\sword\blacksword1\blacksword1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blogDemo/blogDemo.iml" filepath="$PROJECT_DIR$/blogDemo/blogDemo.iml" />
+      <module fileurl="file://E:\2018program\sword\dreamland\dreamland.iml" filepath="E:\2018program\sword\dreamland\dreamland.iml" />
       <module fileurl="file://$PROJECT_DIR$/redsword/redsword.iml" filepath="$PROJECT_DIR$/redsword/redsword.iml" />
       <module fileurl="file://$PROJECT_DIR$/sword.iml" filepath="$PROJECT_DIR$/sword.iml" />
     </modules>
